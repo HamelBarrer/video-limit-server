@@ -14,7 +14,6 @@ router = APIRouter(
 @router.get('/')
 async def get_records():
     records = record_repository.read_record()
-
     return records
 
 
